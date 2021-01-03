@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: 'js30-2021',
   siteMetadata: {
     title: `Javascript 30 - 2021`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
