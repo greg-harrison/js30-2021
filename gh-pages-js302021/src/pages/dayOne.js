@@ -1,16 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import DayOneCrowd from "../images/d1-background.jpg"
 
-const SecondPage = () => (
+const DayOne = () => {
+return (
   <Layout>
     <SEO title="day one" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <div style={{ 
+        background: `url(${DayOneCrowd})`,
+        height: '100vh'
+      }}>
+        
+    </div>
   </Layout>
 )
+}
 
-export default SecondPage
+export default DayOne
