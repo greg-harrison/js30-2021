@@ -17,6 +17,8 @@ const EmphasizedText = styled.span({
   color: "#e4ff00"
 })
 
+
+
 const onKeyPressed = (e) => {
   console.log(e)
   const myRef = React.createRef();
@@ -24,20 +26,30 @@ const onKeyPressed = (e) => {
 
   audio.play();
   return (
-    <audio ref={myRef} src={boom} autoPlay/>
+    <audio ref={myRef} src={boom} autoPlay />
   )
 }
 
-const DayOne = () => {
-  return (
-    <Layout>
-      <SEO title="day one" />
-      <Container>
-        Test
+class DayOne extends React.Component {
+  componentDidMount() {
+  }
+
+  componentWillUnmount() {
+
+  }
+
+  render() {
+    return (
+      <Layout>
+        <SEO title="day one" />
+        <Container>
+          Test
         <button onKeyDown={onKeyPressed}> HELLO </button>
-      </Container>
-    </Layout>
-  )
+          {/* KBD for inputs */}
+        </Container>
+      </Layout>
+    );
+  }
 }
 
 export default DayOne
